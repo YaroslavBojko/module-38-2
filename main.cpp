@@ -21,6 +21,12 @@ int main(int argc, char *argv[])
     htmlWindow->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     webWindow->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
+    QObject::connect(htmlWindow, &QPlainTextEdit::textChanged, [htmlWindow, webWindow]()
+    {
+        auto html = htmlWindow->toPlainText();
+        webWindow->setHtml(html);
+    });
+
     mainWindow->show();
     return a.exec();
 }
