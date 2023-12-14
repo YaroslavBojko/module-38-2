@@ -30,3 +30,21 @@ int main(int argc, char *argv[])
     mainWindow->show();
     return a.exec();
 }
+
+// Text for test:
+/*<!DOCTYPE html>
+<html>
+ <head>
+  <title>Основной DOCTYPE html — schoolsw3.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+
+  <h1>HTML5 Основной DOCTYPE html</h1>
+
+  <h1>Мой первый заголовок</h1>
+  <p>Мой первый параграф.</p>
+
+ </body>
+</html>*/
